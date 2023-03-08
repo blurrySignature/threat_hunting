@@ -24,24 +24,23 @@
 ### Шаг 1
 Выполнение команды system("systeminfo") для вывода информации об операционной системе Windows
 
-    ```{r}
-    system("systeminfo")
-    ```
+```{r}
+system("systeminfo")
+```
 
 ### Шаг 2
 Выполнение команды system("wmic cpu get name") для вывода информации о процессоре
 
-    ```{r}
-    system("wmic cpu get name")
-    ```
+```{r}
+system("wmic cpu get name")
+```
 
 ### Шаг 3
 Выполнение команды system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE) для получения информации о последних логах системы
 
-    ```{r}
-    system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE)
-
-    ```
+```{r}
+system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE)
+```
 
 ## Оценка результата
 
