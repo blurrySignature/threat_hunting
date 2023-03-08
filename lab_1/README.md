@@ -36,7 +36,7 @@
     ```
 
 ### Шаг 3
-Выполнение команды system("wevtutil el", intern = TRUE) для получения информации о последних логах системы
+Выполнение команды system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE) для получения информации о последних логах системы
 
     ```{r}
     system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE)
