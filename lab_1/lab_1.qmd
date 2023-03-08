@@ -14,31 +14,31 @@
 
 ## План
 
-1.  Выполнить команду system("systeminfo")
-2.  Выполнить команду system("wmic cpu get name")
-3.  Выполнить команду system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE)
+1.  Выполнить команду "systeminfo"
+2.  Выполнить команду "wmic cpu get name"
+3.  Выполнить команду "Get-EventLog -LogName System -Newest 30"
 
 ## Шаги
 
 ### Шаг 1
 
-Выполнение команды system("systeminfo") для вывода информации об операционной системе Windows
+Выполнение команды "systeminfo" для вывода информации об операционной системе Windows
 
 ```{r}
-system("systeminfo")
+system2("systeminfo", stdout = TRUE)
 ```
 
 ### Шаг 2
 
-Выполнение команды system("wmic cpu get name") для вывода информации о процессоре
+Выполнение команды "wmic cpu get name" для вывода информации о процессоре
 
 ```{r}
-system("wmic cpu get name")
+system("wmic cpu get name", intern = TRUE)
 ```
 
 ### Шаг 3
 
-Выполнение команды system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE) для получения информации о последних логах системы
+Выполнение команды "Get-EventLog -LogName System -Newest 30" для получения информации о последних логах системы
 
 ```{r}
 system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE)
