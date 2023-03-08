@@ -28,13 +28,15 @@
     system("systeminfo")
     ```
 
-2.  Выполнение команды system("wmic cpu get name") для вывода информации о процессоре
+### Шаг 2
+Выполнение команды system("wmic cpu get name") для вывода информации о процессоре
 
     ```{r}
     system("wmic cpu get name")
     ```
 
-3.  Выполнение команды system("wevtutil el", intern = TRUE) для получения информации о последних логах системы
+### Шаг 3
+Выполнение команды system("wevtutil el", intern = TRUE) для получения информации о последних логах системы
 
     ```{r}
     system2("powershell", args = "Get-EventLog -LogName System -Newest 30", stdout = TRUE)
