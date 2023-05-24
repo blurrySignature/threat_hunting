@@ -43,7 +43,7 @@ packetbeat.yml
 
 ![image](https://github.com/Pave1Nesterov/threat_hunting/assets/95019919/bd88c051-af51-4582-84f0-f7227ecb570b)
 
-Шаг 2. Работа с ElasticSearch
+### Шаг 2. Работа с ElasticSearch
 
 1.  filebeat
 
