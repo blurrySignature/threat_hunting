@@ -1,0 +1,8 @@
+---
+title: "Лабораторная работа № 7"
+  format:
+    md:
+      output-file: README.md
+---
+
+https://pave1nesterov.github.io/quarto_website/
