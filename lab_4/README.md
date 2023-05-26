@@ -57,17 +57,17 @@
 docker-compose up 
 ```
 
-
+![image](https://github.com/Pave1Nesterov/threat_hunting/assets/95019919/38e08b67-40f2-4a62-b1b2-e400d3c0f302)
 
 ### Шаг 2. Использование системы threat intelligence OpenCTI
 
 #### 1. После перехода на веб-ресурс OpenCTI пользователя встречает поле авторизации
 
-
+![image](https://github.com/Pave1Nesterov/threat_hunting/assets/95019919/fa37d075-aac5-4fbe-9ace-445de2cc4678)
 
 #### 2. После входа появляется веб-интерфейс:
 
-
+![image](https://github.com/Pave1Nesterov/threat_hunting/assets/95019919/263041e0-a15f-4532-95fd-52d9349f6332)
 
 #### 3. Импортируем содержимое файла hosts.txt как индикаторы, используя API Opencti
 
@@ -104,11 +104,11 @@ for domain in domains:
 
 #### 4. Импортируем сетевой трафик (файл dns.log, полученный в PR2) в OpenCTI
 
-
+![image](https://github.com/Pave1Nesterov/threat_hunting/assets/95019919/26e52bee-0f8f-4c04-a3e4-8329bece2fe5)
 
 #### 5. Добавляем dns.log в рабочую область, переходим в раздел анализа и фильтруем трафик для просмотра нежелательного
 
-
+![image](https://github.com/Pave1Nesterov/threat_hunting/assets/95019919/89c1e10a-1285-4765-b9c3-887e402f8223)
 
 ## Оценка результата
 
